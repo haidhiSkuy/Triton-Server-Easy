@@ -1,0 +1,32 @@
+name: "densenet_onnx"
+platform: "onnxruntime_onnx"
+input {
+  name: "data_0"
+  data_type: TYPE_FP32
+  format: FORMAT_NCHW
+  dims: 3
+  dims: 224
+  dims: 224
+  reshape {
+    shape: 1
+    shape: 3
+    shape: 224
+    shape: 224
+  }
+}
+output {
+  name: "fc6_1"
+  data_type: TYPE_FP32
+  dims: 1000
+  label_filename: "densenet_labels.txt"
+  reshape {
+    shape: 1
+    shape: 1000
+    shape: 1
+    shape: 1
+  }
+}
+instance_group {
+  count: 5
+  kind: KIND_GPU
+}
