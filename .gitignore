@@ -1,2 +1,3 @@
 .vscode/
 analyzer_result/
+**/__pycache__
