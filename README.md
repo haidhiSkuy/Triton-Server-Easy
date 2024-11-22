@@ -50,8 +50,8 @@ Make sure kalau server sudah berjalan:
 curl -v localhost:8000/v2/health/ready
 ``` 
 Kalau server kalian sudah berjalan, maka output command di atas adalah seperti ini: 
-![result](docs/server_run_success.png)
 
+<img src="docs/server_run_success.png" alt="result" width="300"/>
 
 Untuk menjalankan inference, buka docker versi sdk via docker juga (kalian akan masuk ke bash) 
 ```bash
@@ -64,4 +64,5 @@ Lalu jalankan code client bawaan container:
 ``` 
 
 Kalian akan dapat output: 
-![result](docs/inference_sample_success.png)
+
+<img src="docs/inference_sample_success.png" alt="result" width="300"/>
